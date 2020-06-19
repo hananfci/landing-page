@@ -199,17 +199,17 @@ section:nth-of-type(3n + 1) .landing__container::after {
 /* ---- Theme State Rules ---- */
 /* Section Active Styles */
 /* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
-section.your-active-class {
+section.section_active {
     background: rgb(0, 0, 0);
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
 }
 
-section.your-active-class .landing__container::before {
+section.section_active .landing__container::before {
     opacity: 1;
     animation: rotate 4s linear 0s infinite forwards;
 }
 
-section.your-active-class .landing__container::after {
+section.section_active .landing__container::after {
     opacity: 1;
     animation: rotate 5s linear 0s infinite forwards reverse;
 }
@@ -227,3 +227,17 @@ section.your-active-class .landing__container::after {
 		           rotate(-360deg);
 	}
 }
+@media only screen  and (min-width: 768px)   and (max-width: 992px) {
+    .navbar__menu .menu__link {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    
+    .navbar__menu .menu__link {
+        font-size: 10px;
+    }
+}
+
+  
